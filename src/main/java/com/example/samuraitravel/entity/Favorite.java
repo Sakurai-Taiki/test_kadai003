@@ -1,3 +1,5 @@
+ package com.example.samuraitravel.entity;
+
 import java.sql.Timestamp;
 
 import jakarta.persistence.Column;
