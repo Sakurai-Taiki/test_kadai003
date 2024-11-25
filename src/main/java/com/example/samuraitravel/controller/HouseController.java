@@ -16,25 +16,32 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.samuraitravel.entity.House;
 import com.example.samuraitravel.entity.Review;
+import com.example.samuraitravel.entity.Favorite;
 import com.example.samuraitravel.entity.User;
 import com.example.samuraitravel.form.ReservationInputForm;
 import com.example.samuraitravel.repository.HouseRepository;
 import com.example.samuraitravel.repository.ReviewRepository;
+import com.example.samuraitravel.repository.FavoriteRepository;
 import com.example.samuraitravel.security.UserDetailsImpl;
 import com.example.samuraitravel.service.ReviewService;
+import com.example.samuraitravel.service.FavoriteService;
 
 @Controller
 @RequestMapping("/houses")
 public class HouseController {
     private final HouseRepository houseRepository;     
      private final ReviewRepository reviewRepository;   
-     private final ReviewService reviewService;  
+     private final ReviewService reviewService; 
+     private final FavoriteRepository favoriteRepository;
+     private final FavoriteService favoriteService;
      
      
-     public HouseController(HouseRepository houseRepository, ReviewRepository reviewRepository, ReviewService reviewService) {
+     public HouseController(FavoriteRepository favoriteRepository, FavoriteService favoriteService, HouseRepository houseRepository, ReviewRepository reviewRepository, ReviewService reviewService) {
          this.houseRepository = houseRepository;      
           this.reviewRepository = reviewRepository;
           this.reviewService = reviewService;
+          this.favoriteRepository = favoriteRepository;
+          this.favoriteService = favoriteService;
      }    
 
 	@GetMapping
