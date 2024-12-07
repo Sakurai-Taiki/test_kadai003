@@ -1,4 +1,4 @@
- package com.example.samuraitravel.form;
+package com.example.samuraitravel.form;
  
  import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;

@@ -1,4 +1,4 @@
-package com.example.samuraitravel.controller;
+ package com.example.samuraitravel.controller;
  
  import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

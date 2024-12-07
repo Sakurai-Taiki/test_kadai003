@@ -1,4 +1,4 @@
-package com.example.samuraitravel.repository;
+ package com.example.samuraitravel.repository;
  
  import java.util.List;
 
