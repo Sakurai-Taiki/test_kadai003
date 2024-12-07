@@ -139,6 +139,9 @@ footer {
 .review-star {
 	color: #FFD700;
 }
+.favorite-button {
+	color: #5196a6;
+}
 
 @media screen and (min-width: 1400px) {
 	.samuraitravel-container {
